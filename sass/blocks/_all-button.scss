@@ -1,0 +1,56 @@
+.all-button {
+	text-align: center;
+	margin: 20px 0 0 0;
+	
+	a {
+		color: #3e6174;
+		font-size: 18px;
+		text-align: center;
+		display: inline-block;
+		padding: 15px 29px;
+		border: 1px solid #c5d0d7;
+		border-radius: 24px;
+		text-decoration: none;
+		font-family: open_sans_lightregular;
+
+		&:hover {
+			border-color: #3e6174;
+		}
+
+	}
+
+}
+
+.all-button-absolute {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	z-index: 10;
+}
+
+.all-button-right-bar {
+	
+	a {
+		font-size: 15px;
+		padding: 9px 29px;
+	}	
+
+}
+
+.all-button-left-bar {
+	
+	a {
+		font-size: 15px;
+		padding: 9px 0;
+		width: 100%;
+	}	
+
+}
+
+@media (max-width: 480px) {
+	
+	.all-button-absolute {
+		position: static;
+	}
+
+}

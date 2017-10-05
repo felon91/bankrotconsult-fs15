@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+$green: #5bd352;
+$white: #ffffff;
+$blue: #3e6174;
+
+/**
+ * Основные стили
+ **/
+
+body {
+	font-family: open_sansregular, Arial, sans-serif;
+	font-size: 16px;
+	//-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    height: auto;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}
+
+.wrap {
+	@include min-max(320px, 1000px, 20px);
+}
+
+@media (max-width: 480px) {
+	
+	.wrap {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+}

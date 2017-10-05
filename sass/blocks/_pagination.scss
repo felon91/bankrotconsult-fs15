@@ -1,0 +1,29 @@
+.pagination {
+	margin: 15px 0 30px;
+
+	ul {
+		display: flex;
+		justify-content: center;
+
+		li {
+			width: 32px;
+			line-height: 32px;
+			text-align: center;
+		}
+
+		a {
+			font-size: 18px;
+			color: #23c52d;
+			border-radius: 50%;
+		}
+
+		span {
+			display: block;
+			border-radius: 50%;
+			background: #26c56c;
+			color: #fff;
+		}
+
+	}
+
+}

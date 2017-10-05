@@ -1,0 +1,49 @@
+.consultation {
+	background: url('../img/consultation.jpg') center no-repeat;
+	padding: 35px 0 43px;
+
+	.title {
+		@include title();
+		color: $white;
+
+		&:after {
+			background: $white;
+		}
+
+	}
+
+	.consultation__form {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+
+}
+
+@media (max-width: 580px) {
+
+	.consultation {
+		background: url("../img/consultation-tablet.jpg") center no-repeat;
+		background-size: cover;
+		padding: 30px 0;
+
+		.consultation__form {
+			flex-direction: column;
+			margin-top: 20px;
+		}
+
+	}
+
+}		
+
+@media (max-width: 480px) {
+
+	.consultation {
+
+		.title {
+			font-size: 25px;
+		}
+
+	}
+
+}

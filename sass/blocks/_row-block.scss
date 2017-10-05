@@ -1,0 +1,30 @@
+.row-block {
+	
+	h1 {
+		font-size: 32px;
+		
+	}
+
+	p {
+		margin: 20px 0;
+		color: #000;
+		font-size: 15px;
+		line-height: 16px;
+		font-family: open_sans_lightregular;
+	}
+
+	a {
+		text-decoration: none;
+		color: #23c52d;
+		font-size: 15px;
+		line-height: 16px;
+		font-family: open_sans_lightregular;
+	}
+
+	.info {
+		background: url("../img/info.png") left center no-repeat;
+		padding: 10px 0 10px 53px;
+	}
+
+
+}

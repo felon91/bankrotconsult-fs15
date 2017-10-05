@@ -1,0 +1,35 @@
+.last-questions {
+	background: #f1f5f7;
+	padding: 10px 20px 15px;
+	box-sizing: border-box;
+
+	> p {
+		font-size: 18px;
+		line-height: 22px;
+		margin-top: 10px;
+	}
+
+	ul {
+
+	}
+
+	li {
+		margin: 20px 0;
+
+		a {
+			font-size: 13px;
+			font-family: open_sans_lightregular;
+			color: #000;
+			text-decoration: none;
+
+			&:hover {
+				color: #66bb2c;
+			}
+
+		}
+
+	}
+
+
+
+}

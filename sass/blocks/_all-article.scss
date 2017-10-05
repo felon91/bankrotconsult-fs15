@@ -1,0 +1,33 @@
+.all-article {
+	 padding: 40px 0 50px;
+
+	p {
+		font-size: 16px;
+		line-height: 20px;
+		color: #000;
+		text-align: center;
+		margin: 17px 0;
+		font-family: open_sans_lightregular;
+	}
+
+	.title {
+		@include title();
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.all-article {
+
+		p {
+			font-size: 14px;
+		}
+
+		.title {
+			font-size: 25px;
+		}
+
+	}
+
+}

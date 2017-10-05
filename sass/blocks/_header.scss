@@ -1,0 +1,46 @@
+.header {
+
+	.header__top {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 12.5px 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+	
+	.header {
+
+		.button {
+			display: none;
+		}
+
+		.phone {
+			display: none;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+
+.header {
+	
+	.header__top {
+
+		.logo {
+
+			img {
+				width: 171px;
+			}
+
+		}
+
+	}
+
+}
+
+}

@@ -1,0 +1,138 @@
+.articles {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.articles__element {
+		flex-basis: 47.9%;
+		margin: 22px 0;
+
+		a {
+			display: flex;
+			text-decoration: none;
+			justify-content: space-between;
+
+			&:hover {
+
+				.articles__photo {
+
+					&:after {
+						background: url('../img/add.png') center no-repeat, linear-gradient(54deg, rgba(62,97,116,.6), rgba(54,160,50,.6));
+						background-size: 30px, 100%;
+					}
+
+				}
+
+				.articles__text {
+
+					.articles__title {
+						color: #22c52d;
+					}
+
+				}
+
+			}
+
+		}
+
+		.articles__photo {
+			position: relative;
+			flex-basis: 90px;
+			margin-right: 21px;
+
+			&:after {
+				background-image: linear-gradient(54deg, rgba(62,97,116,.21), rgba(54,160,50,.21));
+				content: "";
+				width: 90px;
+				height: 90px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				clip-path: polygon(0 100%, 90% 100%, 100% 0, 0px 0px);
+			}
+
+			/*&:before {
+				height: 100px;
+				width: 17px;
+				content: "";
+				background: $white;
+				position: absolute;
+				top: 0;
+				z-index: 1;
+				transform: rotate(10deg);
+				right: -8px;
+				display: block;
+			}*/
+
+			img {
+				display: block;
+				clip-path: polygon(0 100%, 90% 100%, 100% 0, 0px 0px);
+			}
+
+		}
+
+		.articles__text {
+			margin-left: 0;
+			flex-basis: 85.1%;
+
+			.articles__title {
+				font-size: 18px;
+				color: #000;
+				font-family: open_sansregular;
+				margin-bottom: 10px;
+			}
+
+			span {
+				font-size: 15px;
+				color: #000;
+				font-family: open_sans_lightregular;
+				display: block;
+			}
+
+		}
+
+
+
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.articles {
+		flex-direction: column;
+
+		.articles__element {
+			flex-basis: auto;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.articles {
+
+		.articles__element {
+
+			a {
+				//flex-direction: column;
+				//text-align: center;
+			}
+
+			.articles__photo {
+				//margin: 0 auto 15px;
+			}
+
+			.articles__text {
+				//margin-left: 0;
+				//flex-basis: auto;
+			}
+
+		}
+
+	}
+
+}

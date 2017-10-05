@@ -1,0 +1,199 @@
+.why-we {
+	padding: 40px 0 50px;
+
+	p {
+		font-size: 16px;
+		line-height: 20px;
+		color: #000;
+		text-align: center;
+		margin: 17px 0;
+		font-family: open_sans_lightregular;
+	}
+
+	.title {
+		@include title();
+	}
+
+	.why-we__block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.why-we__element {
+		flex-basis: 23.4%;
+		margin-top: 20px;
+
+		p {
+			font-size: 15px;
+			font-family: open_sans_lightregular;
+			color: #000;
+		}
+
+		 b {
+		 	font-family: open_sans_semiboldregular;
+		 }
+
+	}
+
+	.why-we__circle {
+		width: 117px;
+		height: 117px;
+		border-radius: 117px;
+		border: 1px solid #dde8ee;
+		display: flex;
+		text-align: center;
+		position: relative;
+		margin: 0 auto 23px;
+		flex-shrink: 0;
+		
+		&:before {
+			width: 109px;
+			height: 109px;
+			border-radius: 110px;
+			border: 1px solid #dde8ee;
+			content: "";
+			display: block;
+			position: absolute;
+			left: 3px;
+			top: 3px;
+		}
+
+		span {
+			align-self: center;	
+			margin: 0 auto;
+		}
+
+	}
+
+}
+
+@media (max-width: 768px) {
+	
+	.why-we {
+
+		.why-we__element {
+			flex-basis: 47.8%;
+			display: flex;
+			justify-content: space-between;
+
+			p {
+				text-align: left;
+				flex-basis: 70%;
+				align-self: center;
+				padding-left: 20px;
+				box-sizing: border-box;
+			}
+
+		}
+
+		.why-we__circle {
+			width: 85px;
+			height: 85px;
+			border-radius: 85px;
+			border: 1px solid #dde8ee;
+			display: flex;
+			text-align: center;
+			position: relative;
+			margin: 0;
+			align-self: center;
+
+			&:before {
+				width: 77px;
+				height: 77px;
+				border-radius: 77px;
+				border: 1px solid #dde8ee;
+				content: "";
+				display: block;
+				position: absolute;
+				left: 3px;
+				top: 3px;
+			}
+
+			span {
+				align-self: center;	
+				margin: 0 auto;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 640px) {
+	
+	.why-we {
+
+		.why-we__element {
+			flex-basis: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			p {
+				flex-basis: 84%;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 540px) {
+	
+	.why-we {
+
+		.why-we__element {
+
+			p {
+				text-align: left;
+				flex-basis: 88%;
+				align-self: center;
+				padding-left: 20px;
+				box-sizing: border-box;
+			}
+
+		}
+
+		.why-we__circle {
+			width: 64px;
+			height: 64px;
+			flex-basis: 64px;
+			border-radius: 64px;
+
+			span {
+
+				img {
+					width: 70%;
+				}
+
+			}
+
+			&:before {
+				width: 56px;
+				height: 56px;
+				border-radius: 56px;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.why-we {
+
+		.title {
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+	}
+
+}

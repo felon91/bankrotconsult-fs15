@@ -1,0 +1,27 @@
+.tablet-phone {
+	text-align: center;
+	background: #f1f5f7;
+	margin: 10px;
+	padding: 30px 0;
+	position: relative;
+	display: none;
+
+	.button {
+		margin-top: 20px;
+	}
+
+	.tablet-phone__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	
+	.tablet-phone {
+		display: block;
+	}
+
+}

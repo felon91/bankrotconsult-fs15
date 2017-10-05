@@ -1,0 +1,17 @@
+.hamburger {
+	align-self: center;
+	display: none;
+
+	img {
+		cursor: pointer;
+	}
+
+}
+
+@media (max-width: 768px) {
+	
+	.hamburger {
+		display: block;
+	}
+
+}

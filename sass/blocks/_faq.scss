@@ -1,0 +1,196 @@
+.faq {
+	border-top: 1px solid #c5d0d7;
+	padding: 40px 0 50px;
+
+	.title {
+		@include title();
+		margin-bottom: 30px;
+	}
+
+}
+
+.faq-all {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.faq-all__element {
+		flex-basis: 48.4%;
+		margin: 0 0 22px 0;
+
+		a {
+			display: block;
+			text-decoration: none;
+			border: 1px solid #dde8ee;
+			position: relative;
+			margin-left: 10px;
+			margin-top: 10px;
+
+			&:before {
+				background: url('../img/what.png') 0 0 #fff no-repeat;
+				content: "";
+				width: 40px;
+				height: 40px;
+				display: block;
+				position: absolute;
+				left: -10px;
+				top: -10px;
+				border-radius: 40px;
+				z-index: 10;
+			}
+
+			&:hover {
+				border-color: $blue;
+				&:before {
+					background-position: -40px 0;
+				}
+
+				.faq-all__title {
+					background-color: $blue;
+					color: $white;
+				}
+
+			}
+
+		}
+
+		.faq-all__title {
+			color: #000;
+			font-size: 18px;
+			line-height: 20px;
+			display: block;
+			background: #f0f5f7;
+			padding: 20px 45px 20px 40px;
+			margin: 0;
+		}
+
+		.faq-all__answer {
+			color: #23c52d;
+			font-size: 14px;
+			background: url('../img/arr.png') right center no-repeat;
+			padding: 14px 25px 12px 40px;
+			display: inline-block;
+			margin: 0;
+		}
+
+
+	}
+
+}
+
+.faq-all-row {
+	flex-direction: column;
+
+	.faq-all__element {
+		flex-basis: 100%;
+
+		a {
+
+			.faq-all__title {
+				position: relative;
+
+				&:after {
+					background: url("../img/arrow-sprite.png") 0 0 no-repeat;
+					content: "";
+					width: 27px;
+					height: 15px;
+					position: absolute;
+					right: 15px;
+					top: 50%;
+					display: block;
+					margin-top: -7.5px;
+				}
+
+			}
+
+			.faq-all__answer {
+				color: #4d5357;
+				background: none;
+				font-family: open_sans_lightregular;
+				line-height: 16px;
+				display: none;
+			}
+
+			&:hover {
+
+				.faq-all__title {
+
+					&:after {
+						background-position: -27px 0;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.faq-all__element-active {
+
+		a {
+
+			.faq-all__title {
+
+				&:after {
+					background: url("../img/arrow-sprite2.png") -27px 0 no-repeat;
+				}
+
+			}
+
+			&:hover {
+
+				.faq-all__title {
+
+						&:after {
+							background-position: 0 0;
+						}
+
+					}
+
+				}
+
+		}
+
+
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.faq-all {
+		flex-direction: column;
+
+		.faq-all__element {
+			flex-basis: auto;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.faq {
+
+		.title {
+			font-size: 25px;
+		}
+
+	}
+
+	.faq-all {
+	
+		.faq-all__element {
+		
+			.faq-all__title {
+				font-size: 17px;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,52 @@
+.case-all {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.case-all__element {
+		flex-basis: 48.4%;
+		margin: 0 0 22px 0;
+		display: flex;
+		border: 1px solid #dfe7ed;
+		flex-wrap: wrap;
+
+		a {
+			color: #ffffff;
+    		text-decoration: none;
+    		font-size: 16px;
+		}
+
+	}
+
+}
+
+@media (max-width: 880px) {
+
+	.case-all {
+		flex-direction: column;
+
+		.case-all__element {
+			flex-basis: auto;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.case-all {
+
+		.case-all__element {
+			flex-basis: auto;
+			flex-direction: column;
+
+			.case {
+				flex-basis: auto;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,30 @@
+.advokat {
+	display: flex;
+	border: 1px solid #dde7ee;
+	margin: 20px 0;
+	justify-content: space-between;
+
+	div {
+		margin-right: 20px;
+	}
+
+	img {
+		display: block;
+		clip-path: polygon(0 100%, 90% 100%, 100% 0, 0px 0px);
+	}
+
+	p {
+		margin: 0 !important;
+		align-self: center;
+		padding: 10px 20px 10px 0;
+		flex-basis: 81%;
+	}
+
+	span {
+		display: block;
+		font-size: 11px;
+		color: #818f98;
+		margin-top: 6px;
+	}
+
+}
